@@ -169,8 +169,15 @@
 %\newpage
 % Abbildungsverzeichnis soll im Inhaltsverzeichnis auftauchen
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
-% Abbildungsverzeichnis endgueltig anzeigen
+% Verion 1: Abbildungsverzeichnis MIT führender Nummberierung endgueltig anzeigen
 \listoffigures
+
+% Verion 2: Abbildungsverzeichnis OHNE führende Nummberierung endgueltig anzeigen
+%\begingroup
+%\renewcommand\numberline[1]{}
+%\listoffigures
+%\endgroup
+
 
 % das Tabellenverzeichnis
 %\newpage
