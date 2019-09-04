@@ -4,6 +4,9 @@ Diese LaTeX-Vorlage kann für technische Berichte und Diplom- / Bachelor- / Mast
 
 This LaTeX-template can be used for technical reports, BSc or MSc thesis. Please see "Hauptdatei.pdf" as an example.
 
+![latex-vorlage-diplom-bachelor-masterarbeiten](main.png "latex-vorlage-diplom-bachelor-masterarbeiten")
+
+
 ## Verwendung
 
 Dreh- und Angelpunkt der Vorlage ist die "Hauptdatei.tex". Hier werden grundlegende Layout-Einstellungen gesetzt und die anderen Dateien inkludiert. Diese könnt ihr beliebig für eure eigene Arbeit erweitern. Hinweise zu den einzelnen LaTeX-Direktiven befinden sich direkt im Quellcode der Vorlage.
