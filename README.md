@@ -58,3 +58,9 @@ Ich wünsche euch viel Erfolg und Spaß bei der Erstellung eurer Abschlussarbeit
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Germany License.
 http://creativecommons.org/licenses/by-nc-sa/3.0/de/
+
+# Lade mich auf einen Kaffee ein!
+
+Wenn dir die Latex-Vorlage (viel) Zeit erspart hat, du endlich deine Abschlussarbeit abgegeben hast und jetzt einfach etwas zurück geben möchtest, kannst du mich gerne auf einen (oder zwei) Kaffee einladen. Ja, ich trinke gerne Kaffee :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6LZRV8ZHN2Z9A)
