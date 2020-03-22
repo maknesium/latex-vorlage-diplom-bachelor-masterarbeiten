@@ -1,5 +1,10 @@
 # latex-vorlage-diplom-bachelor-masterarbeiten
 
+<p align="center">
+  <span>Deutsch</span> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/english/README.md">English</a>
+</p>
+
 Diese LaTeX-Vorlage kann für technische Berichte und Diplom- / Bachelor- / Masterarbeiten genutzt werden. Eine Vorschau liefert "[Hauptdatei.pdf](/src/Hauptdatei.pdf)".
 
 This LaTeX-template can be used for technical reports, BSc or MSc thesis. Please see "[Hauptdatei.pdf](/src/Hauptdatei.pdf)" as an example.
