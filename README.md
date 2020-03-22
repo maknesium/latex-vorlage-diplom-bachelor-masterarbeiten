@@ -1,6 +1,6 @@
 # latex-vorlage-diplom-bachelor-masterarbeiten
 
-Diese LaTeX-Vorlage kann für technische Berichte und Diplom- / Bachelor- / Masterarbeiten genutzt werden. Eine Vorschau liefert "Hauptdatei.pdf".
+Diese LaTeX-Vorlage kann für technische Berichte und Diplom- / Bachelor- / Masterarbeiten genutzt werden. Eine Vorschau liefert "[Hauptdatei.pdf](/src/Hauptdatei.pdf)".
 
 This LaTeX-template can be used for technical reports, BSc or MSc thesis. Please see "[Hauptdatei.pdf](/src/Hauptdatei.pdf)" as an example.
 
