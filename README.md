@@ -6,16 +6,15 @@ This LaTeX-template can be used for technical reports, BSc or MSc thesis. Please
 
 ![latex-vorlage-diplom-bachelor-masterarbeiten](main.png "latex-vorlage-diplom-bachelor-masterarbeiten")
 
-
 ## Verwendung
 
-Dreh- und Angelpunkt der Vorlage ist die "Hauptdatei.tex". Hier werden grundlegende Layout-Einstellungen gesetzt und die anderen Dateien inkludiert. Diese könnt ihr beliebig für eure eigene Arbeit erweitern. Hinweise zu den einzelnen LaTeX-Direktiven befinden sich direkt im Quellcode der Vorlage.
+Dreh- und Angelpunkt der Vorlage ist die "[Hauptdatei.tex](/src/Hauptdatei.tex)". Hier werden grundlegende Layout-Einstellungen gesetzt und die anderen Dateien inkludiert. Diese könnt ihr beliebig für eure eigene Arbeit erweitern. Hinweise zu den einzelnen LaTeX-Direktiven befinden sich direkt im Quellcode der Vorlage.
 
-In der "beispiel.tex" wird gezeigt wie Bilder, Bildreferenzen, Tabellen, Quellcode-Listings, mathematische Formeln und Fußnoten in LaTeX verwendet werden können.
+In der "[beispiel.tex](/src/beispiel.tex)" wird gezeigt wie Bilder, Bildreferenzen, Tabellen, Quellcode-Listings, mathematische Formeln und Fußnoten in LaTeX verwendet werden können.
 
 Des Weiteren findet ihr in der Vorlage diverse Platzhalter für die Logos eurer Universität / Fachhochschule, euren Namen, Professoren, Matrikelnummer etc.
 
-Die Vorlage verwendet die deutschen Literaturzitate im Literaturverzeichnis gemäß der deutschen Norm DIN 1505, Teil 2 vom Jan. 1984 (siehe alphadin.bst). Prüft bitte ob dieser Zitat-Stil von eurem Institut akzeptiert wird, was jedoch für eine Abschlussarbeit in deutscher Sprache meist der Fall sein dürfte.
+Die Vorlage verwendet die deutschen Literaturzitate im Literaturverzeichnis gemäß der deutschen Norm DIN 1505, Teil 2 vom Jan. 1984 (siehe [alphadin.bst](/src/alphadin.bst)). Prüft bitte ob dieser Zitat-Stil von eurem Institut akzeptiert wird, was jedoch für eine Abschlussarbeit in deutscher Sprache meist der Fall sein dürfte.
 
 ## Zeichensatz
 
@@ -23,7 +22,7 @@ Die Vorlage verwendet den generell empfehlenswerten Zeichensatz UTF-8. Dadurch k
 
 ## Von LaTeX zum PDF
 
-Unter "scripts/generatePdf.sh" liegt das Skript welches auf unixähnliches Betriebssystemen (Linux, Mac) nach Installation einer TEX Distribution häufig direkt verwendet werden kann. Mittels pdflatex, bibtex und makeindex wird aus der Vorlage direkt ein PDF inkl. Literaturverzeichnis und Abkürzungsverzeichnis erstellt.
+Unter "[scripts/generatePdf.sh](/scripts/generatePdf.sh)" liegt das Skript welches auf unixähnliches Betriebssystemen (Linux, Mac) nach Installation einer TEX Distribution häufig direkt verwendet werden kann. Mittels pdflatex, bibtex und makeindex wird aus der Vorlage direkt ein PDF inkl. Literaturverzeichnis und Abkürzungsverzeichnis erstellt.
 
 ## LaTeX Distributionen und Editoren
 
