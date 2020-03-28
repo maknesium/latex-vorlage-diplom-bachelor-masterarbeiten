@@ -150,19 +150,26 @@
 % 1.5 facher Zeilenabstand
 \onehalfspacing
 
+\newpage
+
 % Sperrvermerk
+\thispagestyle{empty}
 \input{sperrvermerk}
 
 \newpage
 
 % Einleitung / Abstract
+\thispagestyle{empty}
 \input{abstract}
 
 % einfacher Zeilenabstand
 \singlespacing
 
-% Inhaltsverzeichnis anzeigen
 \newpage
+% Seitenzählung bei Inhaltsverzeichnis beginnen
+\setcounter{page}{1}
+
+% Inhaltsverzeichnis anzeigen
 \tableofcontents
 
 % das Abbildungsverzeichnis
@@ -233,14 +240,19 @@
 
 % einzelne Abschnitte
 \input{1_einleitung}
+\newpage
 
 \input{2_kap1}
+\newpage
 
 \input{3_kap2}
+\newpage
 
-%....
+% hier können weitere Kapitel angelegt und eingetragen werden
+% ....
 
 \input{7_ausblick}
+\newpage
 
 \input{8_fazit}
 

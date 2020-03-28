@@ -37,6 +37,8 @@ Vermutlich wirst du zum Verfassen deiner Arbeit einen Editor mit LaTeX Unterstü
 
 Bei Linux Distributionen auf Debian Basis empfehle ich die TEX Distribution [TeX Live](http://www.tug.org/texlive/ "TeX Live") sowie den Editor [Kile](http://kile.sourceforge.net/ "Kile").
 
+Für Eilige lautet der apt-get Befehl: `sudo apt-get install texlive texlive-lang-german texlive-latex-extra lmodern`
+
 Bei der Installation der Software unter Ubuntu helfen die folgenden Links:
 [Installation von TeX-Live](http://wiki.ubuntuusers.de/LATEX#TeX-Live "Installation von TeX-Live").
 [Installation von Kile](http://wiki.ubuntuusers.de/Kile "Installation von Kile").
