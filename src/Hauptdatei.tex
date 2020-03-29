@@ -145,7 +145,7 @@
 \input{latex_einstellungen/deckblatt}
 
 % römische Numerierung
-%\pagenumbering{arabic}
+\pagenumbering{roman}
 
 % 1.5 facher Zeilenabstand
 \onehalfspacing
@@ -170,10 +170,11 @@
 \setcounter{page}{1}
 
 % Inhaltsverzeichnis anzeigen
+\thispagestyle{empty}
 \tableofcontents
 
+\newpage
 % das Abbildungsverzeichnis
-%\newpage
 % Abbildungsverzeichnis soll im Inhaltsverzeichnis auftauchen
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
 % Verion 1: Abbildungsverzeichnis MIT führender Nummberierung endgueltig anzeigen
@@ -187,7 +188,7 @@
 
 
 % das Tabellenverzeichnis
-%\newpage
+\newpage
 % Tabellenverzeichnis soll im Inhaltsverzeichnis auftauchen
 \addcontentsline{toc}{section}{Tabellenverzeichnis}
 % \fancyhead[L]{Abbildungsverzeichnis / Abkürzungsverzeichnis} %Kopfzeile links
@@ -213,19 +214,19 @@
 %}
 %\makeatother% --> \makeatletter
 % das Listingverzeichnis
-%\newpage
+\newpage
 % Listingverzeichnis soll im Inhaltsverzeichnis auftauchen
 \addcontentsline{toc}{section}{Listingverzeichnis}
-\fancyhead[L]{Abbildungs- / Tabellen- / Listingverzeichnis} %Kopfzeile links
+\fancyhead[L]{Listingverzeichnis} %Kopfzeile links
 \renewcommand{\lstlistlistingname}{Listingverzeichnis}
 \lstlistoflistings
 %%%%
 
 % das Abkürzungsverzeichnis
-%\newpage
+\newpage
 % Abkürzungsverzeichnis soll im Inhaltsverzeichnis auftauchen
 \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-% das Abkürzungsverzeichnis entgültige Ausgeben
+% das Abkürzungsverzeichnis ausgeben
 \fancyhead[L]{Abkürzungsverzeichnis} %Kopfzeile links
 \input{latex_einstellungen/abkuezungen/abkuerzungen}
 \printnomenclature[3cm]
@@ -238,7 +239,10 @@
 % 1,5 facher Zeilenabstand
 \onehalfspacing
 
-% einzelne Abschnitte
+% arabische Seitennummerierung ab hier
+\pagenumbering{arabic}
+
+% einzelne Kapitel werden hier eingebunden
 \input{1_einleitung}
 \newpage
 
