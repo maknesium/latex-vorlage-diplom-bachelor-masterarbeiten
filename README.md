@@ -51,6 +51,13 @@ Auf dem Mac hat sich eine Kombination aus [MacTeX](http://www.tug.org/mactex/ "M
 
 Unter Windows habe ich persönlich [TeXlipse](http://texlipse.sourceforge.net/ "TeXlipse") (Eclipse Plugin für LaTeX) sowie das [TeXnicCenter](http://www.texniccenter.org/ "TeXnicCenter") als Editor verwendet. Als Distribution kann [MikTeX](http://miktex.org/ "MikTeX") verwendet werden.
 
+
+### Docker
+
+Man kann die Umgebung zum Erstellen der PDFs auch in einem Docker-Container laufen lassen. Hierfür kann das [Dockerfile](/Dockerfile) genutzt werden.
+
+Das Docker-Image kann z.B. mit dem Befehl `docker build -t maknesium/latexvorlage:latest` erstellt werden. Der Container wird anschließend mit `docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest` erstellt. Der Container bleibt nach dem Bauen vorhanden, muss also für ein neues Kompilieren der tex-Dateien nur per `docker start latexvorlage-container` gestartet werden.
+
 ## Feedback
 
 Falls ihr Anmerkungen, Verbesserungsvorschläge und / oder Fehler findet, schreibt mir bitte eine Nachricht an:
