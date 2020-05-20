@@ -42,6 +42,12 @@ On the Mac, a combination of the [MacTeX](http://www.tug.org/mactex/ "MacTeX") d
 
 Under Windows I personally used [TeXlipse](http://texlipse.sourceforge.net/ "TeXlipse") (Eclipse Plugin for LaTeX) and the [TeXnicCenter](http://www.texniccenter.org/ "TeXnicCenter") as editor. As distribution [MikTeX](http://miktex.org/ "MikTeX") can be used.
 
+### Docker
+
+The environment to create pdf files can be run in a Docker container. For this task, the provided [Dockerfile](../../Dockerfile) can be used.
+
+The Docker image can be created with the command `docker build -t maknesium/latexvorlage:latest`. Then, the container can be created with the command `docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest`. The container is not deleted after it is finished compiling the tex files and can simply be started again to compile the tex files again with the command `docker start latexvorlage-container`.
+
 ## Feedback
 
 If you find any comments, suggestions for improvement and / or errors, please send me a message:
