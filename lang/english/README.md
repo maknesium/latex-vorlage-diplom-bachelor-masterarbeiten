@@ -1,8 +1,8 @@
-# latex-vorlage-diplom-bachelor-masterarbeiten
+# latex-template-diplom-bachelor-masterthesis
 
 This LaTeX-template can be used for technical reports, BSc or MSc thesis. Please see "[Hauptdatei.pdf](../../src/Hauptdatei.pdf)" as an example.
 
-![latex-vorlage-diplom-bachelor-masterarbeiten](../../main.png "latex-vorlage-diplom-bachelor-masterarbeiten")
+![latex-vorlage-diplom-bachelor-masterarbeiten](../../main.png "latex-template-diplom-bachelor-masterthesis")
 
 ## Usage
 
@@ -12,7 +12,7 @@ The "[example.tex](../../src/example.tex)" shows how images, image references, t
 
 Furthermore you will find several placeholders for the logos of your university / college, your name, professors, matriculation number etc.
 
-The template uses the German literature citations in the bibliography according to the German standard DIN 1505, part 2 from Jan. 1984 (see [alphadin.bst](../../src/alphadin.bst)). Please check if this style of citation is accepted by your institute, which is usually the case for a thesis in German language.
+The template uses the German literature citations in the bibliography according to the German standard DIN 1505, part 2 from ^Jan. 1984 (see [alphadin.bst](../../src/alphadin.bst)). Please check if this style of citation is accepted by your institute, which is usually the case for a thesis in German language.
 
 ## Character Encoding
 

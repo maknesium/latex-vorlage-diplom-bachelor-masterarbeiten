@@ -2,7 +2,13 @@
 
 <p align="center">
   <span>Deutsch</span> |
-  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/english/README.md">English</a>
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/english/README.md">English</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/francais/README.md">Français</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/italiano/README.md">Italiano</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/espagnol/README.md">Español</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/portugues/README.md">Português</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/chinese/README.md">中文</a> |
+  <a href="https://github.com/maknesium/latex-vorlage-diplom-bachelor-masterarbeiten/tree/master/lang/russian/README.md">ру́сский</a>
 </p>
 
 Diese LaTeX-Vorlage kann für technische Berichte und Diplom- / Bachelor- / Masterarbeiten genutzt werden. Eine Vorschau liefert "[Hauptdatei.pdf](/src/Hauptdatei.pdf)".
