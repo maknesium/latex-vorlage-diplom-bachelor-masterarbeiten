@@ -1,18 +1,18 @@
 # latex-vorlag-diplom-bachelor-masterarbeiten
 
-这个LaTeX模板可以用于技术报告、学士或硕士论文。请看"[Hauptdatei.pdf](.../.../src/Hauptdatei.pdf) "为例。
+这个LaTeX模板可以用于技术报告、学士或硕士论文。请看"[Hauptdatei.pdf](../../src/Hauptdatei.pdf) "为例。
 
-![latex-vorlag-diplom-学士-硕士](././main.png "latex-vorlag-diplom-学士-硕士")
+![latex-vorlage-diplom-bachelor-masterarbeiten](../../main.png "latex-template-diplom-bachelor-masterthesis")
 
 ##用途
 
-模板的主文件是"[Hauptdatei.tex](./.../src/Hauptdatei.tex)"。这里设置了基本的布局设置，并包含了其他文件。你可以为自己的工作扩展这些文件。LaTeX指令的提示可以直接在模板的源代码中找到。
+模板的主文件是"[Hauptdatei.tex](../../src/Hauptdatei.tex)"。这里设置了基本的布局设置，并包含了其他文件。你可以为自己的工作扩展这些文件。LaTeX指令的提示可以直接在模板的源代码中找到。
 
-在"[example.tex](.../.../src/example.tex) "中显示了如何在LaTeX中使用图像、图像参考、表格、源代码列表、数学公式和脚注。
+在"[example.tex](../../src/example.tex) "中显示了如何在LaTeX中使用图像、图像参考、表格、源代码列表、数学公式和脚注。
 
 此外，你还可以找到几个占位符，用于放置你的大学/学院的标志、你的姓名、教授、预科号等。
 
-本模板根据德国标准DIN 1505，1984年1月起的第2部分，在书目中使用德国文献引文（见[alphadin.bst](.../.../src/alphadin.bst)）。请检查您的学院是否接受这种引用方式，通常德文论文都是如此。
+本模板根据德国标准DIN 1505，1984年1月起的第2部分，在书目中使用德国文献引文（见[alphadin.bst](../../src/alphadin.bst)）。请检查您的学院是否接受这种引用方式，通常德文论文都是如此。
 
 ## ＃＃字符编码
 
@@ -20,7 +20,7 @@
 
 ## ＃＃从LaTeX到PDF
 
-在"[scripts/generatePdf.sh](.../.../scripts/generatePdf.sh) "下，你可以找到安装了TEX发行版后，在类似unix的操作系统(Linux，Mac)上直接使用的脚本。使用pdflatex、bibtex和makeindex可以直接从模板中生成包含书目和缩写列表的PDF。
+在"[scripts/generatePdf.sh](../../scripts/generatePdf.sh) "下，你可以找到安装了TEX发行版后，在类似unix的操作系统(Linux，Mac)上直接使用的脚本。使用pdflatex、bibtex和makeindex可以直接从模板中生成包含书目和缩写列表的PDF。
 
 ## LaTeX发行版和编辑器
 
@@ -31,8 +31,8 @@
 对于基于Debian的Linux发行版，我推荐TEX发行版[TeX Live](http://www.tug.org/texlive/ "TeX Live")和编辑器[Kile](http://kile.sourceforge.net/ "Kile")。
 
 下面的链接将帮助你在Ubuntu下安装软件。
-安装TeX Live](http://wiki.ubuntuusers.de/LATEX#TeX-Live "安装TeX Live")。
-安装Kile](http://wiki.ubuntuusers.de/Kile "安装Kile")。
+安装[TeX Live](http://wiki.ubuntuusers.de/LATEX#TeX-Live "安装TeX Live")。
+安装[Kile](http://wiki.ubuntuusers.de/Kile "安装Kile")。
 
 ###Mac
 
@@ -44,9 +44,9 @@
 
 ### Docker
 
-创建pdf文件的环境可以在Docker容器中运行。对于这个任务，可以使用提供的[Dockerfile](././Dockerfile)。
+创建pdf文件的环境可以在Docker容器中运行。对于这个任务，可以使用提供的[Dockerfile](../../Dockerfile)。
 
-Docker镜像可以通过命令`docker build -t maknesium/latexvorlage:last`来创建。然后，可以用`docker run -d --name latexvorlag-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:last`命令创建容器。容器在编译完tex文件后不会被删除，可以简单地用`docker start latexvorlag-container`命令再次启动，重新编译tex文件。
+Docker镜像可以通过命令`docker build -t maknesium/latexvorlage:latest`来创建。然后，可以用`docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest`命令创建容器。容器在编译完tex文件后不会被删除，可以简单地用`docker start latexvorlage-container`命令再次启动，重新编译tex文件。
 
 ## ＃＃反馈
 

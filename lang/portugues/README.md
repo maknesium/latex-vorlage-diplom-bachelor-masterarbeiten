@@ -2,7 +2,7 @@
 
 Este LaTeX-template pode ser utilizado para relatórios técnicos, tese de BSc ou MSc. Por favor ver "[Hauptdatei.pdf](.../.../src/Hauptdatei.pdf)" como um exemplo.
 
-![latex-vorlage-diplom-bachelor-masterarbeiten](.../.../main.png "latex-vorlage-diplom-bachelor-masterarbeiten")
+![latex-vorlage-diplom-bachelor-masterarbeiten](../../main.png "latex-template-diplom-bachelor-masterthesis")
 
 ## Utilização
 
