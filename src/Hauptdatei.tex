@@ -175,10 +175,10 @@
 
 \newpage
 % das Abbildungsverzeichnis
-% Abbildungsverzeichnis soll im Inhaltsverzeichnis auftauchen
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 % Verion 1: Abbildungsverzeichnis MIT führender Nummberierung endgueltig anzeigen
 \listoffigures
+% Abbildungsverzeichnis soll im Inhaltsverzeichnis auftauchen
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 
 % Verion 2: Abbildungsverzeichnis OHNE führende Nummberierung endgueltig anzeigen
 %\begingroup
@@ -189,11 +189,11 @@
 
 % das Tabellenverzeichnis
 \newpage
-% Tabellenverzeichnis soll im Inhaltsverzeichnis auftauchen
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
 % \fancyhead[L]{Abbildungsverzeichnis / Abkürzungsverzeichnis} %Kopfzeile links
 % Tabellenverzeichnis endgültig anzeigen
 \listoftables
+% Tabellenverzeichnis soll im Inhaltsverzeichnis auftauchen
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
 
 %% WORKAROUND für Listings
 %\makeatletter% --> De-TeX-FAQ
@@ -215,21 +215,21 @@
 %\makeatother% --> \makeatletter
 % das Listingverzeichnis
 \newpage
-% Listingverzeichnis soll im Inhaltsverzeichnis auftauchen
-\addcontentsline{toc}{section}{Listingverzeichnis}
 \fancyhead[L]{Listingverzeichnis} %Kopfzeile links
 \renewcommand{\lstlistlistingname}{Listingverzeichnis}
 \lstlistoflistings
+% Listingverzeichnis soll im Inhaltsverzeichnis auftauchen
+\addcontentsline{toc}{section}{Listingverzeichnis}
 %%%%
 
 % das Abkürzungsverzeichnis
 \newpage
-% Abkürzungsverzeichnis soll im Inhaltsverzeichnis auftauchen
-\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 % das Abkürzungsverzeichnis ausgeben
 \fancyhead[L]{Abkürzungsverzeichnis} %Kopfzeile links
 \input{latex_einstellungen/abkuezungen/abkuerzungen}
 \printnomenclature[3cm]
+% Abkürzungsverzeichnis soll im Inhaltsverzeichnis auftauchen
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 
 
 %%%%%%% EINLEITUNG %%%%%%%%%%%%

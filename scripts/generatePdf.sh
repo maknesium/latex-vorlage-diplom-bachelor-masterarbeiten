@@ -1,5 +1,5 @@
 #!/bin/bash
-# runme if you want generate the pdf file
+# runme if you want to generate the pdf file
 
 cd ../src
 
