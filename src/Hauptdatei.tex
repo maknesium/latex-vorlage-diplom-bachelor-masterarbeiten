@@ -266,6 +266,7 @@
 \singlespacing
 % Literaturliste soll im Inhaltsverzeichnis auftauchen
 \newpage
+\phantomsection
 \addcontentsline{toc}{section}{Literaturverzeichnis}
 % Literaturverzeichnis anzeigen
 \renewcommand\refname{Literaturverzeichnis}
@@ -282,12 +283,14 @@
 \onehalfspacing
 % evtl. Anhang
 \newpage
+\phantomsection
 \addcontentsline{toc}{section}{Anhang}
 \fancyhead[L]{Anhang} %Kopfzeile links
 \input{anhang/anhang}
 
 % Eidesstattliche Erklärung
 \newpage
+\phantomsection
 \addcontentsline{toc}{section}{Eidesstattliche Erklärung}
 \input{erklaerung}
 
