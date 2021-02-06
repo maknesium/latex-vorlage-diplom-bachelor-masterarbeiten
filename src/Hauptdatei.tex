@@ -88,6 +88,15 @@
 % für Stichwortverzeichnis
 \usepackage{makeidx}
 
+%Punkte für die Einträge im Inhaltsverzeichnis
+\usepackage{tocstyle}
+\newtocstyle[KOMAlike][leaders]{chapterwithdot}{
+	\settocfeature{pagenumberbox}{\makebox[1em][r]}% Platz für Seitenzahl
+	\settocfeature[-1]{leaders}{\hfill}% keine Punkte bei part
+	\settocfeature[-1]{pagenumberbox}{\phantom}% keine Seitenzahl bei part
+}
+\usetocstyle{chapterwithdot}
+
 % für Listings
 \usepackage{listings}
 \lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, keywordstyle=\color{black}\bfseries, stringstyle=\ttfamily,showstringspaces=false,basicstyle=\footnotesize,captionpos=b}
@@ -241,6 +250,14 @@
 
 % arabische Seitennummerierung ab hier
 \pagenumbering{arabic}
+
+% Alternative Einbindung des Abstract in Kapitel "0" falls gewünscht
+%\setcounter{section}{-1}
+%\setcounter{page}{0}
+
+% Einbindung abstract
+%\input{0_abstract}
+%\newpage
 
 % einzelne Kapitel werden hier eingebunden
 \input{1_einleitung}
