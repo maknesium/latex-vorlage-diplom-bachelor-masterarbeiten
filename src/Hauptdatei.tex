@@ -88,14 +88,19 @@
 % für Stichwortverzeichnis
 \usepackage{makeidx}
 
-%Punkte für die Einträge im Inhaltsverzeichnis
-\usepackage{tocstyle}
-\newtocstyle[KOMAlike][leaders]{chapterwithdot}{
-	\settocfeature{pagenumberbox}{\makebox[1em][r]}% Platz für Seitenzahl
-	\settocfeature[-1]{leaders}{\hfill}% keine Punkte bei part
-	\settocfeature[-1]{pagenumberbox}{\phantom}% keine Seitenzahl bei part
-}
-\usetocstyle{chapterwithdot}
+%Konfiguriere das Inhaltsverzeichnis
+\usepackage{tocbasic}
+\DeclareTOCStyleEntries[
+  raggedentrytext,
+  numwidth=0pt,
+  numsep=1ex,
+  dynnumwidth,
+]{tocline}{chapter,section,subsection,subsubsection,paragraph,subparagraph}
+\DeclareTOCStyleEntries[
+  indent=0pt,
+  linefill=\TOCLineLeaderFill,
+]{tocline}{section,subsection,subsubsection,paragraph,subparagraph}
+
 
 % für Listings
 \usepackage{listings}
