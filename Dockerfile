@@ -5,6 +5,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
         texlive \
+        texlive-base \
         texlive-lang-german \
         texlive-latex-extra \
         lmodern \
