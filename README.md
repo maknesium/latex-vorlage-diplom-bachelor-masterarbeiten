@@ -64,6 +64,12 @@ Man kann die Umgebung zum Erstellen der PDFs auch in einem Docker-Container lauf
 
 Das Docker-Image kann z.B. mit dem Befehl `docker build -t maknesium/latexvorlage:latest` erstellt werden. Der Container wird anschließend mit `docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest` erstellt. Der Container bleibt nach dem Bauen vorhanden, muss also für ein neues Kompilieren der tex-Dateien nur per `docker start latexvorlage-container` gestartet werden.
 
+### LaTeX Workshop Extension für Visual Studio Code
+
+Bei der Verwendung des LaTeX Workshop Extension für Visual Studio Code als Editor wird möglicherweise das Abkürzungsverzeichnis nicht korrekt angezeigt.
+
+In diesem Fall muss auf der Kommandozeile einmal ins Verzeichnis `/src` gewechselt und der Befehl `makeindex Hauptdatei.nlo -s ./latex_einstellungen/abkuezungen/nomencl.ist -o Hauptdatei.nls` ausgeführt werden. Anschließend wird das Abkürzungsverzeichnis korrekt angezeigt.
+
 ## Feedback
 
 Falls ihr Anmerkungen, Verbesserungsvorschläge und / oder Fehler findet, schreibt mir bitte eine Nachricht an:

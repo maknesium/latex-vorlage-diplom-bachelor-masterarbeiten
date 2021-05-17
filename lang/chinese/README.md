@@ -48,6 +48,12 @@
 
 Docker镜像可以通过命令`docker build -t maknesium/latexvorlage:latest`来创建。然后，可以用`docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest`命令创建容器。容器在编译完tex文件后不会被删除，可以简单地用`docker start latexvorlage-container`命令再次启动，重新编译tex文件。
 
+### LaTeX Workshop Extension for Visual Studio Code
+
+当使用LaTeX Workshop Extension for Visual Studio Code作为编辑器时，缩写目录可能无法正确显示。
+
+在这种情况下，你必须在命令行上改变到`/src`目录，执行`makeindex mainfile.nlo -s ./latex_settings/abbreviations/nomencl.istt -o mainfile.nls`命令。缩写目录就会正确显示。
+
 ## ＃＃反馈
 
 如果您发现任何意见、改进建议和/或错误，请给我留言。

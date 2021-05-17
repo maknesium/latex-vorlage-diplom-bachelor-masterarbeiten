@@ -48,6 +48,12 @@
 
 Образ Docker может быть создан с помощью команды `docker build -t maknesium/latexvorlage:last`. Затем контейнер можно создать командой `docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:last`. Контейнер не удаляется после завершения компиляции текстовых файлов и может быть просто запущен заново для компиляции текстовых файлов командой `docker start latexvorlage-container`.
 
+### Расширение LaTeX Workshop для Visual Studio Code
+
+При использовании расширения LaTeX Workshop Extension for Visual Studio Code в качестве редактора каталог сокращений может отображаться некорректно.
+
+В этом случае необходимо один раз в командной строке перейти в каталог `/src` и выполнить команду `makeindex mainfile.nlo -s ./latex_settings/abbreviations/nomencl.ist -o mainfile.nls`. После этого каталог аббревиатур будет отображаться правильно.
+
 ## Обратная связь
 
 Если вы найдете какие-либо комментарии, предложения по улучшению и/или ошибки, пожалуйста, отправьте мне сообщение:

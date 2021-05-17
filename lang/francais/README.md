@@ -48,6 +48,12 @@ L'environnement permettant de créer des fichiers pdf peut être exécuté dans 
 
 L'image du Docker peut être créée avec la commande `docker build -t maknesium/latexvorlage:latest`. Ensuite, le conteneur peut être créé avec la commande `docker run -d --name latexvorlage-container -v /pfad/zum/ordner/src:/app/src maknesium/latexvorlage:latest`. Le conteneur n'est pas effacé une fois la compilation des fichiers textuels terminée et peut simplement être relancé pour recompiler les fichiers textuels avec la commande `docker start latexvorlage-container`.
 
+### Extension de l'atelier LaTeX pour Visual Studio Code
+
+Lors de l'utilisation de l'extension LaTeX Workshop pour Visual Studio Code comme éditeur, le répertoire des abréviations peut ne pas s'afficher correctement.
+
+Dans ce cas, vous devez vous rendre dans le répertoire `/src` une fois sur la ligne de commande et exécuter la commande `makeindex mainfile.nlo -s ./latex_settings/abbreviations/nomencl.ist -o mainfile.nls`. Le répertoire des abréviations s'affichera alors correctement.
+
 ## Feedback
 
 Si vous trouvez des commentaires, des suggestions d'amélioration et/ou des erreurs, veuillez m'envoyer un message :
